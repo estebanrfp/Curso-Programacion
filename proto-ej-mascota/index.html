@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		// var perro = {
+		// 	agilidad: 50,
+		// 	fuerza: 100,
+		// 	limpieza: false,
+		// 	longevidad: 14,
+		// 	amor: true,
+		// 	voz: function () {
+		// 		alert("guau!");
+		// 	}
+
+		// };
+		// 	perro.voz();
+		var nombre = "frisco";
+
+		var Mascota = function (n,v) {
+			this.nombre = n;
+			this.voz = l;
+		}
+//prototype: me meto a la construcción interna del objeto
+//"todos los objetos de tipo Mascota, cundo creo uno nuevo
+//metales una función o un método que se llame hablar"
+//los métodos son funciones de una clase y un atributo es una 
+//variable de una clase.
+//cuando invoque la function hablar, prototype se lo asigna a toda
+//la clase dentro de la mascota "alert"
+		Mascota.prototype.hablar = function () {
+			alert(this.nombre + "dice: " + this.voz);
+		}
+
+		var perro = new Mascota("roco", "guau!");
+		var gato = new Mascota("misifu", "miau!");
+		perro.hablar();
+		gato.hablar();
+
+	</script>
+</head>
+<body>
+	<h1>perros y gatos</h1>
+</body>
+</html>
